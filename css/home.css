@@ -103,7 +103,7 @@ main {
 	margin: 10px auto;
 }
 .leftContent h2 {
-	padding-top: 55px;
+	padding-top: 30px;
 }
 .leftContent p {
 	padding: 10px 30px;
@@ -210,6 +210,7 @@ main {
 }
 /* Error Content */
 .error {
+	min-height: 25px;
 	color: red;
 	font-size: 20px;
 	margin-top: 20px;
