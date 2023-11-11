@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			return;
 		} else {
 			try {
+				document.getElementById("error").innerText = `Loading..`;
 				let headersList = {
 					Accept: "*/*",
 					"Content-Type": "application/json",

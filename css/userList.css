@@ -46,3 +46,7 @@
 	padding: 12px;
 	border-bottom: 1px solid #dddd;
 }
+
+.loading {
+	color: rgb(189, 24, 153);
+}

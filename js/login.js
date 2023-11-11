@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const usernameOrEmail = document.getElementById("usernameOrEmail").value;
 		const password = document.getElementById("password").value;
 		try {
+			errorPara.innerText = `Loading...`;
 			let headersList = {
 				Accept: "*/*",
 				"Content-Type": "application/json",

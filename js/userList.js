@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// console.log("Dom Loaded");
 	let tableData = [];
 	const getData = async () => {
+		document.getElementById("loading").innerText = `Loading...`;
 		let headersList = {
 			Accept: "*/*",
 		};
@@ -28,16 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			console.log(tableData, "hello");
 		} else {
 			const table = document.getElementById("table-data");
-
 			tableData.forEach((user) => {
 				let newRow = document.createElement("tr");
 				let fullName = user.name;
 
-				// let firstName = fullName.split(" ")[0];
-				// let lastName = fullName.split(" ");
-				// console.log(lastName);
-				// <td>${firstName}</td>
-				// <td>${lastName}</td>
 				newRow.innerHTML = `
                     <td>${fullName}</td>
                     <td>${user.email}</td>
@@ -46,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				table.appendChild(newRow);
 			});
 		}
+		document.getElementById("loading").innerText = ``;
 	};
 	getData();
 });
