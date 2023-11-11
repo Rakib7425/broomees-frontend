@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const password = document.getElementById("inputPassword").value;
 		const confirmPassword = document.getElementById("cPassword").value;
 
-		const fullName = firstName + lastName;
+		const fullName = firstName + " " + lastName;
 
 		handleRegister(fullName, email, username, password, confirmPassword);
 	});
