@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/leftImage.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/userLogin.css">
+    <title>Sign-in users</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <!-- Navigation content -->
+        <ul class="ul">
+            <a href="../index.html">
+                <li>
+                    Home
+                </li>
+            </a>
+            <a href="./users.html">
+                <li>Users</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading">User Form Sign-in</h1>
+        <form id="signInForm" class="form">
+            <!-- <h2>User Sign In</h2> -->
+            <div class="form-group">
+                <label for="usernameOrEmail">Username Or Email:</label>
+                <input type="text" id="usernameOrEmail" name="usernameOrEmail" required placeholder="Username Or Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+            <button type="button" id="signInButton">Sign In</button>
+            <p id="error" class="error">
+                <!-- Error Here -->
+            </p>
+        </form>
+    </div>
+
+    <script src="../js/login.js"></script>
+
+
+</body>
+
+</html>

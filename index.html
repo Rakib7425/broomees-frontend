@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/leftImage.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Broomees - airline</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <!-- Navigation content -->
+        <ul class="ul">
+            <a href="#" class="active">
+                <li>
+                    Sign-up
+                </li>
+            </a>
+            <a href="./pages/users.html">
+                <li>Users</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="mainDiv">
+            <div class="leftSection">
+                <img src="./assets/leftImage.png" alt="LeftImage-airline" height="600px">
+                <div class="leftContent">
+                    <h2 class="h1Text">Altitude Air</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, dolor reprehenderit vitae
+                        provident tempora? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda illo,
+                        sunt amet vel modi alias, dolorem nam temporibus vero sequi neque atque quidem est ullam culpa
+                        esse provident ut soluta?</p>
+                </div>
+            </div>
+            <div class="rightSection">
+                <a href="pages/login.html" class="goToSignInBtn">Signin</a>
+                <div class="rightContent">
+                    <h1>Explore & Experience.</h1>
+                    <p>Get onto your most comfortable journey yet. All the way up.</p>
+                </div>
+                <div class="formDiv">
+                    <form class="customForm" id="SignUpFormData">
+                        <div class="name">
+                            <div class="nameFields">
+                                <div class="firstName">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" placeholder="First Name">
+                                </div>
+                                <div class="lastName">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="username">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Username">
+                        </div>
+                        <div class="password">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" placeholder="Password">
+                        </div>
+                        <div class="confirmPassword">
+                            <label for="cPassword">Confirm Password</label>
+                            <input type="password" id="cPassword" placeholder="Confirm Password">
+                        </div>
+                        <button type="button" id="getStartedButton" class="getStartedButton" title="signUp">Get
+                            Started</button>
+                        <div class="error" id="error">
+                            <!-- Error -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>

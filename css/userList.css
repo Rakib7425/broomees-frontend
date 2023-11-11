@@ -1,0 +1,48 @@
+.h1Text {
+	font-weight: bold;
+	font-size: 2rem;
+}
+#addUser {
+	margin-top: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 15%;
+	padding: 10px;
+	background-color: blueviolet;
+	color: #fff;
+	border: none;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+#addUser:hover {
+	background-color: rgb(104, 27, 176);
+}
+.title {
+	margin-top: 20px;
+	text-transform: uppercase;
+	align-items: start;
+}
+/* Style the table */
+.table {
+	width: 80%;
+	margin: 0 auto;
+	/* border-collapse: collapse; */
+	margin-top: 20px;
+	text-align: center;
+	border: 1px solid rgb(58, 35, 206);
+	/* padding: 20px; */
+	margin-bottom: 30px;
+}
+
+.thead-dark {
+	height: 3rem;
+	background-color: #181717;
+	color: white;
+}
+
+.table-data td {
+	padding: 12px;
+	border-bottom: 1px solid #dddd;
+}

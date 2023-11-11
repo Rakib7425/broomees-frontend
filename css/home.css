@@ -1,0 +1,238 @@
+/* Reset default margin and padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+/* Body styles */
+body {
+	font-family: "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation styles */
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #007bff;
+	min-height: 60px;
+	box-shadow: 0 3px 3px hsl(0deg 0% 0% / 0.3);
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	list-style: none;
+	font-size: 1.2rem;
+}
+.active {
+	color: greenyellow;
+}
+ul a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul li {
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+/* Main styles */
+main {
+	max-width: 90vw;
+	margin: 2rem auto;
+}
+
+/* Main division styles */
+.mainDiv {
+	padding: 30px;
+	border: 2px solid #085db8;
+	background-color: #f8f4f4;
+	border-radius: 10px;
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Left section styles */
+.leftSection {
+	position: relative;
+	flex: 1;
+}
+
+.leftSection img {
+	/* width: 100%; */
+	height: 700px;
+}
+
+.leftContent {
+	position: absolute;
+	left: -6.4%;
+	bottom: -30px;
+	height: 350px;
+	right: 20px;
+	/* transform: translate(-50%, -50%); */
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.577);
+	padding: 20px;
+	border-radius: 0 0 0 8px;
+}
+
+.leftContent hr {
+	height: 4px;
+	border: none;
+	width: 15%;
+	background-color: #f5f5f5;
+	margin: 10px auto;
+}
+.leftContent h2 {
+	padding-top: 55px;
+}
+.leftContent p {
+	padding: 10px 30px;
+	line-height: 1.7rem;
+	color: rgb(167, 160, 160);
+}
+/* Right section styles */
+.rightSection {
+	flex: 1;
+	padding: 0px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Go to Sign In Button */
+.goToSignInBtn {
+	align-self: flex-end;
+	max-width: 150px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #041c36;
+	background: transparent;
+	border: 2px solid blueviolet;
+	border-radius: 6px;
+	padding: 7px 20px;
+	/* margin: 20px 0; */
+	cursor: pointer;
+}
+.goToSignInBtn:hover {
+	background: rgb(230, 215, 246);
+}
+
+/* Right content styles */
+.rightContent {
+	color: blueviolet;
+	margin: 4rem 0 2rem 0;
+}
+
+.rightContent p {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Form styles */
+
+/* Form div */
+.formDiv {
+	width: 100%;
+}
+
+.customForm div {
+	margin-bottom: 15px;
+}
+
+/* Input and label styles */
+.customForm input,
+.customForm textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.customForm input:focus,
+.customForm textarea:focus {
+	border: 1px solid #007bff;
+	outline: none;
+}
+
+.customForm label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* Name fields in one line */
+.nameFields {
+	display: flex;
+	gap: 10px;
+}
+
+.nameFields .firstName,
+.nameFields .lastName {
+	flex: 1;
+	margin-bottom: -5px;
+}
+
+/* Button styles */
+.getStartedButton {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: blueviolet;
+	color: #fff;
+	border: none;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.getStartedButton:hover {
+	background-color: rgb(109, 23, 189);
+}
+/* Error Content */
+.error {
+	color: red;
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.success {
+	color: green;
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (max-width: 1130px) {
+	.mainDiv {
+		flex-direction: column;
+		gap: 8rem;
+	}
+	.leftContent {
+		overflow-y: hidden;
+	}
+	.leftContent h2 {
+		padding-top: 0;
+	}
+}
